@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # sweets
   root "sweets#index"
-  resources :sweets, only:[:new, :create, :index, :edit, :update, :show]
+  resources :sweets, only:[:new, :create, :edit, :update, :show, :destroy]
 
 end
