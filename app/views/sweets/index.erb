@@ -1,1 +1,15 @@
-aaaa
+<div  style="width: 90%;" class="card">
+<% @sweets.each do |sweet| %>
+  <%# <% binding.break %>
+  <div class="card-body">
+    <h4 class="card-title"><%= sweet.name %></h4>
+    <p class="card-text">
+      <%= sweet.description %>
+    </p>
+    <p class="card-text">
+      <%= sweet.user.email %>
+      <%# テーブルの紐付け忘れない %>
+    </p>
+  </div>
+<% end %>
+</div>
